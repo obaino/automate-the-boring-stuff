@@ -1,4 +1,4 @@
-# I have added a counter to track the number of steps needed to reach 1
+# Added a counter to track the number of steps needed to reach 1
 
 def main():
     while True:
