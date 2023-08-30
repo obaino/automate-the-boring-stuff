@@ -1,14 +1,18 @@
 # I have added a counter to track the number of steps needed to reach 1
 
 def main():
-    number = int(input("Enter a number:\n"))
-    step = 0
-    while collatz(number) != 1:
-        step += 1
-        print(f"step: {step} - number: {collatz(number)}")
-        number = collatz(number)
-    print(collatz(number))
-
+    while True:
+        try:
+            number = int(input("Enter a number:\n"))
+            step = 0
+            while collatz(number) != 1:
+                step += 1
+                print(f"step: {step} - number: {collatz(number)}")
+                number = collatz(number)
+            print(collatz(number))
+            break
+        except ValueError:
+            pass
 
 def collatz(num):
     if num % 2 == 0:
