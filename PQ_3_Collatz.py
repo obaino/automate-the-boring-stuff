@@ -1,5 +1,6 @@
 # Added a counter to track the number of steps needed to reach 1
 
+
 def main():
     while True:
         try:
@@ -13,6 +14,7 @@ def main():
             break
         except ValueError:
             pass
+
 
 def collatz(num):
     if num % 2 == 0:
