@@ -1,7 +1,7 @@
 # Conway's Game of Life
 import random, time, copy
-WIDTH = 60
-HEIGHT = 20
+WIDTH = 20
+HEIGHT = 10
 
 # Create a list of list for the cells:
 nextCells = []
@@ -14,9 +14,11 @@ for x in range(WIDTH):
             column.append(' ') # Add a dead cell.
     nextCells.append(column) # nextCells is a list of column lists.
 
+counter = 1
 while True: # Main program loop.
     print('\n\n\n\n\n') # Separate each step with newlines.
     currentCells = copy.deepcopy(nextCells)
+    print(f"Grids created: {counter}")
 
     # Print currentCells on the screen:
     for y in range(HEIGHT):
@@ -63,4 +65,5 @@ while True: # Main program loop.
             else:
                 # Everything else dies or stays dead:
                 nextCells[x][y] = ' '
-    time.sleep(1) # Add a 1 second pause to reduce flickering.
+    counter += 1
+    time.sleep(0.5) # Add a 1 second pause to reduce flickering.
