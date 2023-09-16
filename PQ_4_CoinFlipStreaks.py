@@ -33,7 +33,7 @@ def check(lst):
 
 
 def main():
-    print(f"Chance of streak: {check(results(100000000))}")
+    print(f"Chance of streak: {check(results(1000000))}")
 
 
 if __name__ == "__main__":
