@@ -1,7 +1,8 @@
 import random
+from codetiming  import Timer
 
 
-def results(n):
+def create_list(n):
     # Code that creates a list of 100 'heads' or 'tails' values.
     results = []
     for i in range(n):
@@ -14,7 +15,7 @@ def results(n):
     return results
 
 
-def check(lst):
+def check4streaks(lst):
     # Code that checks if there is a streak of 6 heads or tails in a row.
     counter = 1
     numberOfStreaks = 0
@@ -33,8 +34,11 @@ def check(lst):
 
 
 def main():
-    times = int(input("How many times to flicp a coin? "))
-    print(f"Chance of streak: {check(results(times)):.2f}%")
+    t = Timer()
+    times = int(input("How many times to flip a coin? "))
+    t.start()
+    print(f"Chance of streak: {check4streaks(create_list(times)):.2f}%")
+    t.stop()
 
 
 if __name__ == "__main__":
