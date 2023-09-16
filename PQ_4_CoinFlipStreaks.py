@@ -29,11 +29,12 @@ def check(lst):
             # print (f"{lst[i]} is: {counter} in a row")
             # print(f"Number of Streaks is: {numberOfStreaks}")
 
-    return numberOfStreaks / 100
+    return numberOfStreaks * 100 / len(lst)
 
 
 def main():
-    print(f"Chance of streak: {check(results(1000000))}")
+    times = int(input("How many times to flicp a coin? "))
+    print(f"Chance of streak: {check(results(times)):.2f}%")
 
 
 if __name__ == "__main__":
