@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+
+# my solution ver. 1
+
 import random
 from codetiming  import Timer
 
