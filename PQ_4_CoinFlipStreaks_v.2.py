@@ -12,12 +12,11 @@ numberOfStreaks = 0
 def main():
     t = Timer()
     runs = int(input("How many times to run the experiment? "))
-    # flips_per_run = int(input("How many times to flip the coin per run? "))
     # print(head_tails_list(flips_per_run))
 
     t.start()
     for experimentNumber in range(runs):
-        print(f"{check_for_streak(head_tails_list(flips)) / 100}%")
+        print(f"{check_for_streak(head_tails_list(flips)) / 100 :.2f}%")
     t.stop()
 
 def head_tails_list(flips):
