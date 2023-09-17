@@ -17,7 +17,7 @@ def main():
 
     t.start()
     for experimentNumber in range(runs):
-        print(f"{check_for_streak(head_tails_list(flips))}")
+        print(f"{check_for_streak(head_tails_list(flips)) / 100}%")
     t.stop()
 
 def head_tails_list(flips):
