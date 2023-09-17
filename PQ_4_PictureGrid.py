@@ -10,9 +10,13 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
+width = len(grid[0])
+height = len(grid)
+
+print(f"grid has width: {width} x height: {height}")
 new_grid = []
 
-for row in range(len(grid)):
-    for column in range(len(grid[row])):
-        print(f"{grid[row][column]} is row {row} and column {column}")
+for x in range(width):
+    for y in range(height):
+
 
