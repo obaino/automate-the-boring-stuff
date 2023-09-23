@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+
+# solution found at:
+# https://github.com/IanFindlay/automate-the-boring-stuff-projects/blob/master/Chapter%2004/comma_and_grid.py
+
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['O', 'O', 'O', 'O', '.', '.'],
