@@ -3,7 +3,7 @@
 # my solution ver. 1
 
 import random
-from codetiming  import Timer
+from codetiming import Timer
 
 
 def create_list(n):

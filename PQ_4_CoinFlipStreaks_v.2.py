@@ -2,7 +2,7 @@
 # my solution ver. 2
 
 import random
-from codetiming  import Timer
+from codetiming import Timer
 
 
 streakNo = 6
