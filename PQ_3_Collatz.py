@@ -2,7 +2,7 @@
 
 # Added a counter to track the number of steps needed to reach 1
 
-from codetiming  import Timer
+from codetiming import Timer
 
 
 def main():
